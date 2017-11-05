@@ -1,4 +1,4 @@
-package joy.liu.com.practicedraw1.practice
+package joy.liu.com.hencoderPractice.practice1
 
 import android.content.Context
 import android.graphics.Canvas
@@ -7,7 +7,7 @@ import android.graphics.Paint
 import android.graphics.RectF
 import android.util.AttributeSet
 import android.view.View
-import joy.liu.com.practicedraw1.UiUtils
+import joy.liu.com.hencoderPractice.UiUtils
 
 /**
  * Created by joy on 2017/8/13.
@@ -35,6 +35,7 @@ class DrawPieChartView9:View {
     }
 
     override fun draw(canvas: Canvas) {
+        super.draw(canvas)
         canvas.translate(measuredWidth/2*1.0f,measuredHeight/2*1.0f)
         val rectF = RectF(UiUtils.dipToPx(context, -150) * 1.0f, UiUtils.dipToPx(context, -150) * 1.0f,
                 UiUtils.dipToPx(context, 150) * 1.0f, UiUtils.dipToPx(context, 150) * 1.0f)

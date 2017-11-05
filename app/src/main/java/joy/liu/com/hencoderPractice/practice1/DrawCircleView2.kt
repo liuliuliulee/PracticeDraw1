@@ -1,4 +1,4 @@
-package joy.liu.com.practicedraw1.practice
+package joy.liu.com.hencoderPractice.practice1
 
 import android.content.Context
 import android.graphics.Canvas
@@ -6,7 +6,7 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
-import joy.liu.com.practicedraw1.UiUtils
+import joy.liu.com.hencoderPractice.UiUtils
 
 /**
  * Created by joy on 2017/7/23.

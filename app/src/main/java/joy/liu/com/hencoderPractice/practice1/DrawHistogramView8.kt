@@ -1,4 +1,4 @@
-package joy.liu.com.practicedraw1.practice
+package joy.liu.com.hencoderPractice.practice1
 
 import android.content.Context
 import android.graphics.Canvas
@@ -7,7 +7,7 @@ import android.graphics.Paint
 import android.graphics.RectF
 import android.util.AttributeSet
 import android.view.View
-import joy.liu.com.practicedraw1.UiUtils
+import joy.liu.com.hencoderPractice.UiUtils
 
 /**
  * Created by joy on 2017/8/13.
@@ -37,7 +37,7 @@ class DrawHistogramView8:View {
     override fun draw(canvas: Canvas) {
         canvas.translate(measuredWidth/2*1.0f,measuredHeight/2*1.0f)
         canvas.drawLine(0f,0f, UiUtils.dipToPx(context, 150) * 1.0f,0f,paint)
-        canvas.drawLine(0f,0f, 0f,UiUtils.dipToPx(context, -150) * 1.0f,paint)
+        canvas.drawLine(0f,0f, 0f, UiUtils.dipToPx(context, -150) * 1.0f,paint)
 
         val rectF1 = RectF(UiUtils.dipToPx(context, 10) * 1.0f, UiUtils.dipToPx(context, -20) * 1.0f,
                 UiUtils.dipToPx(context, 35) * 1.0f, 0f)

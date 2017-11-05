@@ -1,4 +1,4 @@
-package joy.liu.com.practicedraw1;
+package joy.liu.com.hencoderPractice;
 
 import android.content.Context;
 import android.content.res.Resources;
