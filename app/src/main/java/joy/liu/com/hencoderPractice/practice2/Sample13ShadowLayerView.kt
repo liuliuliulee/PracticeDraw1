@@ -1,20 +1,20 @@
 package joy.liu.com.hencoderPractice.practice2
 
 import android.content.Context
-import android.graphics.*
+import android.graphics.Canvas
+import android.graphics.Color
+import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
-import joy.liu.com.practicedraw1.R
 
 /**
- * Created by joy on 2017/11/5.
+ * Created by joy on 2017/11/6.
  */
 /**
- * 图片效果
+ * 图形下方阴影效果
  */
-class Sample04BitmapShaderView : View {
-    var paint: Paint = Paint()
-
+class Sample13ShadowLayerView: View {
+    var paint: Paint = Paint(Paint.ANTI_ALIAS_FLAG)
     constructor(context: Context) : super(context) {
         initData()
     }
@@ -28,13 +28,13 @@ class Sample04BitmapShaderView : View {
     }
 
     fun initData() {
-        paint.isAntiAlias = true
-        val bitmap = BitmapFactory.decodeResource(resources, R.drawable.batman)
-        paint.shader = BitmapShader(bitmap, Shader.TileMode.REPEAT, Shader.TileMode.REPEAT)
+        paint.setShadowLayer(10f,5f,5f, Color.RED)
     }
 
     override fun draw(canvas: Canvas) {
         super.draw(canvas)
-        canvas.drawCircle(600f, 600f, 500f, paint)
+        paint.textSize = 120f
+        canvas.drawText("Joy Hello World!",50f,200f,paint)
+
     }
 }

@@ -11,6 +11,9 @@ import android.view.View
 /**
  * Created by joy on 2017/11/5.
  */
+/**
+ * 扫描颜色效果
+ */
 class Sample03SweepGradientView : View {
     var paint: Paint = Paint()
     constructor(context: Context):super(context){initData()}

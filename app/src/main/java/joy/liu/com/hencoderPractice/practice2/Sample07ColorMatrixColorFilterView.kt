@@ -7,14 +7,14 @@ import android.view.View
 import joy.liu.com.practicedraw1.R
 
 /**
- * Created by joy on 2017/11/5.
+ * Created by joy on 2017/11/6.
  */
 /**
- * 图片效果
+ * 颜色矩阵变换
  */
-class Sample04BitmapShaderView : View {
-    var paint: Paint = Paint()
-
+class Sample07ColorMatrixColorFilterView : View {
+    var paint: Paint = Paint(Paint.ANTI_ALIAS_FLAG)
+    var bitmap:Bitmap? = null
     constructor(context: Context) : super(context) {
         initData()
     }
@@ -28,13 +28,17 @@ class Sample04BitmapShaderView : View {
     }
 
     fun initData() {
-        paint.isAntiAlias = true
-        val bitmap = BitmapFactory.decodeResource(resources, R.drawable.batman)
-        paint.shader = BitmapShader(bitmap, Shader.TileMode.REPEAT, Shader.TileMode.REPEAT)
+        bitmap =BitmapFactory.decodeResource(resources, R.drawable.batman)
+        val colorMatrix = ColorMatrix()
+        colorMatrix.setSaturation(0f)//饱和度为0
+        //矩阵颜色过滤器
+        val colorMatrixColorFilter = ColorMatrixColorFilter(colorMatrix)
+        paint.colorFilter = colorMatrixColorFilter
     }
 
     override fun draw(canvas: Canvas) {
         super.draw(canvas)
-        canvas.drawCircle(600f, 600f, 500f, paint)
+        canvas.drawBitmap(bitmap,0f,0f,paint)
     }
+
 }

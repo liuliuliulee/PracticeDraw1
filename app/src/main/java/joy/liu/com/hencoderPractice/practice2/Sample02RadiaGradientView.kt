@@ -8,6 +8,9 @@ import android.view.View
 /**
  * Created by joy on 2017/11/5.
  */
+/**
+ * 波浪效果
+ */
 class Sample02RadiaGradientView : View {
     var paint: Paint = Paint()
 

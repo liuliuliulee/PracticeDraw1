@@ -1,22 +1,23 @@
 package joy.liu.com.hencoderPractice.practice2
 
 import android.content.Context
-import android.graphics.*
+import android.graphics.Canvas
+import android.graphics.Paint
+import android.graphics.Path
 import android.util.AttributeSet
 import android.view.View
-import joy.liu.com.practicedraw1.R
-
-
 
 /**
  * Created by joy on 2017/11/6.
  */
-class Sample06LightingColorFilterView:View{
+/**
+ * 获取textPath
+ */
+class Sample16TextPathView:View {
     var paint: Paint = Paint(Paint.ANTI_ALIAS_FLAG)
-    var bitmap:Bitmap? = null
-    //颜色过滤器
-    var colorFilter1: ColorFilter = LightingColorFilter(0x00ffff, 0x000000)
-    var colorFilter2: ColorFilter = LightingColorFilter(0xffffff, 0x003000)
+    var pathPaint = Paint(Paint.ANTI_ALIAS_FLAG)
+    var textPath = Path()
+    var text = "Hello Joy"
 
     constructor(context: Context) : super(context) {
         initData()
@@ -31,15 +32,18 @@ class Sample06LightingColorFilterView:View{
     }
 
     fun initData() {
-        bitmap = BitmapFactory.decodeResource(resources, R.drawable.batman)
+        setLayerType(LAYER_TYPE_SOFTWARE,null)
+        paint.textSize = 140f
+        paint.getTextPath(text, 0, text.length, 50f, 400f, textPath)
+
+        pathPaint.style = Paint.Style.STROKE
     }
 
     override fun draw(canvas: Canvas) {
         super.draw(canvas)
-        paint.colorFilter=colorFilter1
-        canvas.drawBitmap(bitmap,0f,0f,paint)
-        paint.colorFilter=colorFilter2
-        canvas.drawBitmap(bitmap,(bitmap?.width?:0+100).toFloat(),(bitmap?.height?:0+100).toFloat(),paint)
 
+        canvas.drawText(text, 50f, 200f, paint)
+
+        canvas.drawPath(textPath, pathPaint)
     }
 }

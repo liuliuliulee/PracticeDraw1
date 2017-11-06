@@ -8,6 +8,9 @@ import android.view.View
 /**
  * Created by joy on 2017/11/5.
  */
+/**
+ * 颜色渐变效果
+ */
 class Sample01LinearGradientView: View{
 
     var paint: Paint= Paint()

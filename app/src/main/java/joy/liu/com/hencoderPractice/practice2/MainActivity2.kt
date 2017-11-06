@@ -16,12 +16,21 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         pageModels.apply {
+            add(PageModel(R.string.title_fill_path,R.layout.fragment_fill_path))
+            add(PageModel(R.string.title_text_path,R.layout.fragment_text_path))
             add(PageModel(R.string.title_linear_gradient,R.layout.fragment_linear_gradient))
             add(PageModel(R.string.title_radia_gradient,R.layout.fragment_radia_gradient))
             add(PageModel(R.string.title_sweep_gradient,R.layout.fragment_sweep_gradient))
             add(PageModel(R.string.title_bitmap_shader,R.layout.fragment_bitmap_shader))
             add(PageModel(R.string.title_compose_shader,R.layout.fragment_compose_shader))
-            add(PageModel(R.string.title_lighting_filter,R.layout.fragment_lighting_filter))
+            add(PageModel(R.string.title_color_matrix_color,R.layout.fragment_color_matrix_color))
+            add(PageModel(R.string.title_xfermode,R.layout.fragment_xfermode))
+            add(PageModel(R.string.title_stroke_cap,R.layout.fragment_stroke_cap))
+            add(PageModel(R.string.title_stroke_join,R.layout.fragment_stroke_join))
+            add(PageModel(R.string.title_stroke_miter,R.layout.fragment_stroke_miter))
+            add(PageModel(R.string.title_path_effect,R.layout.fragment_path_effect))
+            add(PageModel(R.string.title_shadow_layer,R.layout.fragment_shadow_layer))
+            add(PageModel(R.string.title_mask_filter,R.layout.fragment_mask_filter))
         }
 
         //kotlin 对象表达式（object）代替 java 中的匿名函数

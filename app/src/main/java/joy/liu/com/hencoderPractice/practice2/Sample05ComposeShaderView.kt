@@ -9,6 +9,9 @@ import joy.liu.com.practicedraw1.R
 /**
  * Created by joy on 2017/11/5.
  */
+/**
+ * 组合 shader 效果
+ */
 class Sample05ComposeShaderView:View{
     var paint: Paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
