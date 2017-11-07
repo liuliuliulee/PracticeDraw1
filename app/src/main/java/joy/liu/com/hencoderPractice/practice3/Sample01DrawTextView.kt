@@ -1,23 +1,18 @@
-package joy.liu.com.hencoderPractice.practice2
+package joy.liu.com.hencoderPractice.practice3
 
 import android.content.Context
-import android.graphics.*
+import android.graphics.Canvas
+import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
 
 /**
- * Created by joy on 2017/11/5.
+ * Created by joy on 2017/11/7.
  */
-/**
- * 颜色渐变效果
- */
-class Sample01LinearGradientView : View {
+class Sample01DrawTextView : View {
 
-    var paint: Paint = Paint()
-
-    //该代码块主构造函数的实体
-    init {
-    }
+    var paint: Paint = Paint(Paint.ANTI_ALIAS_FLAG)
+    val text = "Hello Joy"
 
     constructor(context: Context) : super(context) {
         initData()
@@ -32,13 +27,11 @@ class Sample01LinearGradientView : View {
     }
 
     private fun initData() {
-        paint.isAntiAlias = true
-        paint.shader = LinearGradient(100f, 100f, 500f, 500f,
-                Color.parseColor("#ffffff"), Color.parseColor("#000000"), Shader.TileMode.REPEAT)
+        paint.textSize = 120f
     }
 
     override fun draw(canvas: Canvas) {
         super.draw(canvas)
-        canvas.drawCircle(300f, 300f, 200f, paint)
+        canvas.drawText(text,200f,200f,paint)
     }
 }

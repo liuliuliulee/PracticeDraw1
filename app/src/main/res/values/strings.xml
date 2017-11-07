@@ -27,4 +27,10 @@
     <string name="title_mask_filter">MaskFilter</string>
     <string name="title_fill_path">FillPath</string>
     <string name="title_text_path">TextPath</string>
+    <string name="title_draw_text">DrawText</string>
+    <string name="title_static_layout">StaticLayout</string>
+    <string name="title_font_spacing">GetFontSpacing</string>
+    <string name="title_measure_text">MeasureText</string>
+    <string name="title_get_text_bound">GetTextBound</string>
+    <string name="title_get_font_metrics">GetFontMetrics</string>
 </resources>
