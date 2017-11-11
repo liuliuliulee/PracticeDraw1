@@ -33,4 +33,19 @@
     <string name="title_measure_text">MeasureText</string>
     <string name="title_get_text_bound">GetTextBound</string>
     <string name="title_get_font_metrics">GetFontMetrics</string>
+    <string name="title_canvas_scale">CanvasScale</string>
+    <string name="title_clip_rect">ClipRect</string>
+    <string name="title_clip_path">ClipPath</string>
+    <string name="title_translate">Translate</string>
+    <string name="title_scale">Scale</string>
+    <string name="title_rotate">Rotate</string>
+    <string name="title_skew">Skew</string>
+    <string name="title_matrix_translate">MatrixTranslate</string>
+    <string name="title_matrix_scale">MatrixScale</string>
+    <string name="title_matrix_rotate">MatrixRotate</string>
+    <string name="title_matrix_skew">MatrixSkew</string>
+    <string name="title_camera_rotate">CameraRotate</string>
+    <string name="title_camera_rotate_fix">CameraRotateFix</string>
+    <string name="title_camera_rotate_hitting">CameraRotateHitting</string>
+    <string name="title_camera_flipboard">CameraFlipboard</string>
 </resources>

@@ -12,6 +12,9 @@
         <activity android:name="joy.liu.com.hencoderPractice.practice1.MainActivity1"></activity>
         <activity android:name="joy.liu.com.hencoderPractice.practice2.MainActivity2"></activity>
         <activity android:name="joy.liu.com.hencoderPractice.practice3.MainActivity3">
+
+        </activity>
+        <activity android:name="joy.liu.com.hencoderPractice.practice4.MainActivity4">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
