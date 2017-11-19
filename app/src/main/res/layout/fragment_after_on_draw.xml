@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<joy.liu.com.hencoderPractice.practice5.Sample01AfterOnDrawView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:src="@drawable/batman"
+    android:layout_height="match_parent"/>
+

@@ -42,4 +42,9 @@ public class UiUtils {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, dp, res.getDisplayMetrics());
     }
 
+    public static float dpToPixel(float dp) {
+        DisplayMetrics metrics = Resources.getSystem().getDisplayMetrics();
+        return dp * metrics.density;
+    }
+
 }

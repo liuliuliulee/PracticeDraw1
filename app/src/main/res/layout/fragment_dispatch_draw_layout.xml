@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<joy.liu.com.hencoderPractice.practice5.Sample04DispatchDrawLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:text="hello world\nhello world\nhello world\nhello world\nhello world\nhello world\nhello world\nhello world\nhello world\nhello world\nhello world\nhello world\nhello world\nhello world\nhello world\n"
+    android:layout_height="match_parent"/>
+

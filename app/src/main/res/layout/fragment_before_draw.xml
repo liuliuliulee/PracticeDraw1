@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<joy.liu.com.hencoderPractice.practice5.Sample08BeforeDrawView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:src="@drawable/batman" />
+
